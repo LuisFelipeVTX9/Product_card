@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Montserrat, sans-serif;
+}
+body{
+	width: 100vw;
+	height: 100vh;
+	background-color: #f3eae3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card{
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+}
+.card .img-card{
+	background-image: url("img/image-product-desktop.jpg");
+	background-size: cover;
+	width: 310px;
+	height: 475px;
+	border-radius: 15px 0 0 15px;
+}
+.card-info{
+	height: 475px;
+	background-color: #fff;
+	padding: 0 40px;
+	border-radius: 0 15px 15px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.card-info .mini-title{
+	color: #424242;
+	font-size: 14px;
+	letter-spacing: 5px;
+	font-weight: 500;
+}
+.card-info h1{
+	font-family: Archivo Black, serif;
+	margin-top: 1rem;
+}
+.informations{
+	margin-top: 1rem;
+	font-size: 15px;
+	color: #646464;
+	line-height: 1.5;
+	font-weight: 500;
+}
+.product-price{
+	display: flex;
+	align-items: center;
+	margin-top: 1.2rem;
+}
+.product-price .price{
+	font-family: Archivo Black, serif;
+	font-size: 2.5rem;
+	color: #3d8168;
+}
+.product-price .discount{
+	font-size: 1rem;
+	color: #646464;
+	margin-left: 2rem;
+	font-weight: 500;
+}
+button{
+	display: flex;
+	align-items: center;
+	background-color: #3d8168;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 1.5rem;
+	border: none;
+	border-radius: 8px;
+	padding: 1rem 4.2rem;
+	cursor: pointer;
+	text-align: center;
+}
+button img{
+	margin-right: 1rem;
+}
+button:hover{
+	background-color: #1d3e33;
+	transition: .3s;
+}
+
+/*--------------------MEDIAS QUERIES--------------------*/
+@media(max-width: 768px){
+.card .img-card{
+	width: 270px; 
+	height: 435px; 
+}
+.card-info{
+	height: 435px;
+	padding: 0 30px; 
+}
+.card-info .mini-title{
+	font-size: 12px;
+}
+.card-info h1{
+	font-size: 28px; 
+}
+.informations{
+	font-size: 13px; 
+}
+.product-price .price{
+	font-size: 2.2rem; 
+}
+.product-price .discount{
+	font-size: 14px; 
+}
+button{
+	font-size: 12px; 
+	padding: 0.75rem 3.9rem; 
+}
+
+}
+
+
+@media(max-width: 610px){
+.card{
+	flex-direction: column;
+	justify-content: center;
+}
+.card .img-card{
+	background-image: url("img/image-product-mobile.jpg");
+	background-position: 50%, 50%;
+	width: 290.5px;
+	height: 220px;
+	border-radius: 15px 15px 0 0;
+}
+.card-info{
+	height: auto;
+	padding: 30px;
+	border-radius: 0 0 15px 15px;
+}
+.card-info .mini-title{
+	font-size: 12px;
+}
+.card-info h1{
+	font-size: 26px;
+}
+.informations{
+	font-size: 13px;
+}
+.product-price .price{
+	font-size: 2rem;
+}
+.product-price .discount{
+	font-size: 14px;
+}
+button{
+	font-size: 12px;
+	padding: 0.75rem 4rem;
+}
+
+}
+
+@media(max-width: 320px){
+.card .img-card{
+	width: 265.5px;
+	height: 220px;
+}
+.card-info{
+	padding: 20px;
+}
+.card-info .mini-title{
+	font-size: 10px;
+}
+.card-info h1{
+	font-size: 24px;
+}
+.informations{
+	font-size: 12px;
+}
+.product-price .price{
+	font-size: 1.8rem;
+}
+.product-price .discount{
+	font-size: 12px;
+}
+button{
+	font-size: 11px;
+	padding: 0.75rem 4rem;
+}
+
+}
